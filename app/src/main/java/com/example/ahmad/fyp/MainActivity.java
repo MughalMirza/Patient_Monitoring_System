@@ -103,7 +103,11 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.content_frame, new clinical_menu())
                     .commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.notes) {
+
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new notes())
+                    .commit();
 
         } else if (id == R.id.nav_manage) {
 
