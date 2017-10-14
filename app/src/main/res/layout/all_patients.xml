@@ -1,11 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_marginTop="5dp"
+                    android:text="Patient Monitoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:text="Patient Monitoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/nurselayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/nurse"
+                            android:src="@drawable/nurse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/nursetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sdgcyusdfycfdsycfdyuffuv"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/doctorlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/nurselayout">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/doctor"
+                            android:src="@drawable/doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/doctortext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sdgcyusdfycfdsycfdyuffuv"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/patientlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/doctorlayout">
+
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/patient"
+                            android:src="@drawable/patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/patienttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sdgcyusdfycfdsycfdyuffuv"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_marginTop="5dp"
+                    android:text="Patient Monitoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:text="Patient Monitoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/nurselayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/nurse2"
+                            android:src="@drawable/nurse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/nursetext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sdgcyusdfycfdsycfdyuffuv"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/doctorlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/nurselayout2">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/doctor2"
+                            android:src="@drawable/doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/doctortext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sdgcyusdfycfdsycfdyuffuv"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:id="@+id/patientlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/doctorlayout2">
+
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/patient2"
+                            android:src="@drawable/patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/patienttext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sdgcyusdfycfdsycfdyuffuv"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
 </LinearLayout>

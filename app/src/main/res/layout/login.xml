@@ -52,7 +52,6 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textColorHint="@color/hint"
-
         android:backgroundTint="@color/content"
         android:hint="Enter password"/>
 
@@ -60,10 +59,10 @@
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:textColor="@color/white"
         android:background="@color/content"
-        android:text="LOGIN"/>
+        android:text="LOGIN"
+        android:layout_marginTop="70dp"/>
 
 
 
