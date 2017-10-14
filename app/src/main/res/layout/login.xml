@@ -8,8 +8,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:orientation="vertical"
     android:background="@color/theme">
 
@@ -18,7 +16,7 @@
         android:id="@+id/ecg_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
         android:src="@drawable/ecg_logo"/>
 
     <android.support.v7.widget.AppCompatTextView
@@ -54,6 +52,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textColorHint="@color/hint"
+
         android:backgroundTint="@color/content"
         android:hint="Enter password"/>
 
