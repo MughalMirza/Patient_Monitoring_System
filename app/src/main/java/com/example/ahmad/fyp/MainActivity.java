@@ -25,7 +25,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Don't show keyboard by default
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
+        //Save fragment even on screen rotation >> this line added in manifest >> android:configChanges="orientation|screenSize"
         if (null == savedInstanceState){
             android.app.FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
