@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Random;
+
 /**
  * Created by ahmad on 10/13/2017.
  */
@@ -49,6 +51,12 @@ public class login extends Fragment {
         editPass.startAnimation(fade);
 
         login.startAnimation(fade);
+
+// CHANGE COLOR BACKGROUND
+//            int[] androidColors = getResources().getIntArray(R.array.androidcolors);
+//            int randomAndroidColor = androidColors[new Random().nextInt(androidColors.length)];
+//            view.setBackgroundColor(randomAndroidColor);
+
 
 
         return view;

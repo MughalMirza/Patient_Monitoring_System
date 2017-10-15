@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -24,10 +25,14 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        android.app.FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.content_frame, new login())
-                .commit();
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+        if (null == savedInstanceState){
+            android.app.FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new login())
+                    .commit();
+        }
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -109,7 +114,11 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.content_frame, new notes())
                     .commit();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.new_note) {
+
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new new_note())
+                    .commit();
 
         } else if (id == R.id.nav_share) {
 

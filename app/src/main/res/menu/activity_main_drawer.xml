@@ -15,9 +15,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Notes" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/new_note"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="New Note" />
+
     </group>
 
     <item android:title="Communicate">
