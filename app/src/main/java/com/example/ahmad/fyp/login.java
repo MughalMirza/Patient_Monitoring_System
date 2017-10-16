@@ -3,6 +3,7 @@ package com.example.ahmad.fyp;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -51,6 +53,27 @@ public class login extends Fragment {
         editPass.startAnimation(fade);
 
         login.startAnimation(fade);
+
+        // LOCK THE NAVIGATION DRAWER
+        ((MainActivity)getActivity()).lockDrawer();
+
+        Button button = (Button) view.findViewById(R.id.login);
+        final EditText editccode = (EditText) view.findViewById(R.id.editcode);
+        EditText editpass = (EditText) view.findViewById(R.id.editpass);
+
+        final String edittcode = editccode.getText().toString();
+        button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+               // Toast.makeText(getActivity() ,edittcode, Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).unlockDrawer();
+            }
+        });
+
+
+
 
 // CHANGE COLOR BACKGROUND
 //            int[] androidColors = getResources().getIntArray(R.array.androidcolors);
